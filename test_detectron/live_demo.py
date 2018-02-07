@@ -89,6 +89,8 @@ def main(args):
         key = cv2.waitKey(3)
         if key == 27:
             break
+        elif key == ord('s'):
+            cv2.imwrite('out.jpg',img)
         ret,img = cap.read()
 
 
