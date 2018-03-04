@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1113</width>
+    <height>982</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Input:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inputEdit">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>90</y>
+      <width>821</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectButton">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>80</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>open</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>270</y>
+      <width>341</width>
+      <height>111</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>290</y>
+      <width>108</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stride:</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="strideSlider">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>330</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+    <property name="tracking">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="strideEdit">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>290</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>330</y>
+      <width>31</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>330</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>460</y>
+      <width>108</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stride:</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>440</y>
+      <width>341</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="resizeRateEdit">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>460</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>460</y>
+      <width>108</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>rate:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Info:</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>270</y>
+      <width>451</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>290</y>
+      <width>161</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>start frame:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="endIdxEdit">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>340</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>340</y>
+      <width>141</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>end frame:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="startIdxEdit">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>290</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="xMinEdit">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>390</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>390</y>
+      <width>411</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>left up:      (        ,        )</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="yMinEdit">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>390</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="yMaxEdit">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>440</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="xMaxEdit">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>440</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>440</y>
+      <width>411</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>right down:   (        ,        )</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cutSelectButton">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>310</y>
+      <width>121</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>configure</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="appendEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>700</y>
+      <width>821</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadAppendButton">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>700</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>open</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>650</y>
+      <width>971</width>
+      <height>101</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="insertEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>850</y>
+      <width>821</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>800</y>
+      <width>971</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadInsertButton">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>840</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>open</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>810</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>insert video:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>660</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>append video:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveButton">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>910</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>save</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>541</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Video Process Toolkit</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>550</y>
+      <width>71</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>size:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="resizeSizeEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>550</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="videoInfoEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>130</y>
+      <width>931</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="downsampleCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>230</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Downsample</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="resizeCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>400</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resize</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cutCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>230</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cut</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="reverseCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>520</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reverse</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="appendCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>620</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Append</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="insertCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>770</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Insert</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>510</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>510</y>
+      <width>51</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1/16</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="resizeRateSlider">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>510</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-4</number>
+    </property>
+    <property name="maximum">
+     <number>4</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="tracking">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="grabImgButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>910</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>save images</string>
+    </property>
+   </widget>
+   <zorder>tableWidget_5</zorder>
+   <zorder>tableWidget_4</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>label</zorder>
+   <zorder>inputEdit</zorder>
+   <zorder>selectButton</zorder>
+   <zorder>label_2</zorder>
+   <zorder>strideSlider</zorder>
+   <zorder>strideEdit</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>tableWidget_2</zorder>
+   <zorder>resizeRateEdit</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>tableWidget_3</zorder>
+   <zorder>label_10</zorder>
+   <zorder>endIdxEdit</zorder>
+   <zorder>label_11</zorder>
+   <zorder>startIdxEdit</zorder>
+   <zorder>xMinEdit</zorder>
+   <zorder>label_12</zorder>
+   <zorder>yMinEdit</zorder>
+   <zorder>yMaxEdit</zorder>
+   <zorder>xMaxEdit</zorder>
+   <zorder>label_14</zorder>
+   <zorder>cutSelectButton</zorder>
+   <zorder>appendEdit</zorder>
+   <zorder>loadAppendButton</zorder>
+   <zorder>insertEdit</zorder>
+   <zorder>loadInsertButton</zorder>
+   <zorder>label_13</zorder>
+   <zorder>label_15</zorder>
+   <zorder>saveButton</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_19</zorder>
+   <zorder>resizeSizeEdit</zorder>
+   <zorder>videoInfoEdit</zorder>
+   <zorder>downsampleCheckBox</zorder>
+   <zorder>resizeCheckBox</zorder>
+   <zorder>cutCheckBox</zorder>
+   <zorder>reverseCheckBox</zorder>
+   <zorder>appendCheckBox</zorder>
+   <zorder>insertCheckBox</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>resizeRateSlider</zorder>
+   <zorder>grabImgButton</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

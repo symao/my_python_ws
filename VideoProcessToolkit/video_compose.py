@@ -86,7 +86,7 @@ def video_compose(video1, video2, save_file):
                 ret1, frame1 = cap1.read()
             print('Save video in %s'%save_file)
             break
-
+    cv2.destroyWindow(winname)
 
     # writer = cv2.VideoWriter(save_file, cv2.VideoWriter_fourcc(*"XVID"), , (cols1,rows1))
     # while ret1:
