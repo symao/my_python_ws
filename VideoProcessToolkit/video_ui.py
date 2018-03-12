@@ -2,7 +2,6 @@ import sys
 import cv2
 import os
 import time
-import face_recognition
 import numpy as np
 import sys
 
@@ -55,7 +54,7 @@ class VideoToolGUI(QMainWindow):
         self.open_video = False
         self.videoInfoEdit.setText('No video opened.')
         self.inputEdit.setText('')
-        video_file = QFileDialog.getOpenFileName(self, "Open Video", self.init_open_dir(), "Text Files (*.avi;*.mp4)")[0]
+        video_file = QFileDialog.getOpenFileName(self, "Open Video", self.init_open_dir(), "Video Files (*.avi *.mp4)")[0]
         if video_file and os.path.exists(video_file):
             self.video_file = video_file
             self.inputEdit.setText(self.video_file)
@@ -252,12 +251,12 @@ class VideoToolGUI(QMainWindow):
             QMessageBox.information(self, 'Save success', 'Save success to %s.'%save_dir)
 
     def load_append(self):
-        video_file = QFileDialog.getOpenFileName(self, "Open Append Video", self.init_open_dir(),"Video Files (*.avi;*.mp4)")[0]
+        video_file = QFileDialog.getOpenFileName(self, "Open Append Video", self.init_open_dir(),"Video Files (*.avi *.mp4)")[0]
         if video_file:
             self.appendEdit.setText(video_file)
 
     def load_insert(self):
-        video_file = QFileDialog.getOpenFileName(self, "Open Insert Video", self.init_open_dir(),"Video Files (*.avi;*.mp4)")[0]
+        video_file = QFileDialog.getOpenFileName(self, "Open Insert Video", self.init_open_dir(),"Video Files (*.avi *.mp4)")[0]
         if video_file:
             self.insertEdit.setText(video_file)
 

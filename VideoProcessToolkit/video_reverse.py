@@ -9,7 +9,7 @@ def video_reverse(video_file, out_file):
     if not cap.isOpened():
         print('video revert failed.')
         return
-    print("start reverting...")
+    print("start reversing...")
     tmpdir = 'tmp'
     while os.path.exists(tmpdir):
         tmpdir += '_1'
